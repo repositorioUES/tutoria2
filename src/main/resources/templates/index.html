@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Inicio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div><h1>Inicio</h1></div>
+        Nombre: <span th:text="${estudiante.nombre}"></span><br>
+        Apellido: <span th:text="${estudiante.apellido}"></span><br>
+        Email: <span th:text="${estudiante.email}"></span><br>
+        Carnet <span th:text="${estudiante.carnet}"></span><br>
+        
+    </body>
+</html>
