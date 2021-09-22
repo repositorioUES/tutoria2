@@ -18,7 +18,7 @@ public class ControladorInicio {
         
         var estudiante = new Estudiante();
         estudiante.setNombre("Christian");
-        estudiante.setApellido("Ordoñez");
+        estudiante.setApellido("Garcia");
         estudiante.setCarnet("GO11001");
         estudiante.setEmail("GO11001@ues.edu.sv");
         
