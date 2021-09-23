@@ -1,4 +1,3 @@
-
 package ues.edu.sv.domain;
 
 import lombok.Data;
