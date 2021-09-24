@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import ues.edu.sv.domain.Estudiante;
-import ues.edu.sv.domain.RC15010;
+import ues.edu.sv.domain.MR19082;
 
 @Controller
 @Slf4j
@@ -17,24 +17,24 @@ public class ControladorInicio {
     public String inicio(Model model){
         log.info("Ejecutando el controlador Spring MVC");
         
-        var estudiante = new Estudiante();
+        Estudiante estudiante = new Estudiante();
         estudiante.setNombre("Christian");
         estudiante.setApellido("Garcia");
         estudiante.setCarnet("GO11001");
         estudiante.setEmail("GO11001@ues.edu.sv");
         
         
-        //RC15010 - Inicio//
+        //mr19082 - Inicio//
         
-        var rc15010 = new RC15010();
-        rc15010.setNombre("Marvin");
-        rc15010.setApellido("Rodriguez");
-        rc15010.setCarnet("RC15010");
-        rc15010.setEmail("RC15010@ues.edu.sv");
+        MR19082 mr19082 = new MR19082();
+        mr19082.setNombre("Michael");
+        mr19082.setApellido("Melendez");
+        mr19082.setCarnet("MR19082");
+        mr19082.setEmail("MR19082@ues.edu.sv");
         
-        model.addAttribute("rc15010",rc15010);
+        model.addAttribute("mr19082",mr19082);
         
-        //RC15010 - Fin//
+        //mr19082 - Fin//
         
         
         model.addAttribute("estudiante", estudiante);
