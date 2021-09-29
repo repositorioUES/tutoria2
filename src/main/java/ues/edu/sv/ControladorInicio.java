@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import ues.edu.sv.domain.Estudiante;
 import ues.edu.sv.domain.MR19082;
+import ues.edu.sv.domain.QP19001;
 
 @Controller
 @Slf4j
@@ -23,6 +24,8 @@ public class ControladorInicio {
         estudiante.setCarnet("GO11001");
         estudiante.setEmail("GO11001@ues.edu.sv");
         
+        model.addAttribute("estudiante", estudiante);
+        
         
         //mr19082 - Inicio//
         
@@ -36,8 +39,18 @@ public class ControladorInicio {
         
         //mr19082 - Fin//
         
+        //QP19001 - Inicio
         
-        model.addAttribute("estudiante", estudiante);
+        QP19001 qp19001 = new QP19001();
+        qp19001.setNombre("Herberth");
+        qp19001.setApellido("Quintanilla");
+        qp19001.setCarnet("QP19001");
+        qp19001.setEmail("qp19001@ues.edu.sv");
+        
+        model.addAttribute("qp19001",qp19001);
+        
+        //QP19001 - Fin
+        
         return "index";
     }
     
