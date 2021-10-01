@@ -5,8 +5,8 @@ import lombok.Data;
 
 @Data
 public class HN19004 {
-    private String nombre;
-    private String apellido;
+    private String nombres;
+    private String apellidos;
     private String email;
     private String carnet;
 }

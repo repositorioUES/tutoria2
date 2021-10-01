@@ -52,8 +52,8 @@ public class ControladorInicio {
         
         //QP19001 - Fin
         HN19004 hn19004=new HN19004();
-        hn19004.setNombre("Ricardo Alberto");
-        hn19004.setApellido("Hernandez Navas");
+        hn19004.setNombres("Ricardo Alberto");
+        hn19004.setApellidos("Hernandez Navas");
         hn19004.setCarnet("HN19004");
         hn19004.setEmail("HN19004");
         
