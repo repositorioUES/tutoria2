@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import ues.edu.sv.domain.Estudiante;
+import ues.edu.sv.domain.HN19004;
 import ues.edu.sv.domain.MR19082;
 import ues.edu.sv.domain.QP19001;
 
@@ -50,7 +51,13 @@ public class ControladorInicio {
         model.addAttribute("qp19001",qp19001);
         
         //QP19001 - Fin
+        HN19004 hn19004=new HN19004();
+        hn19004.setNombre("Ricardo Alberto");
+        hn19004.setApellido("Hernandez Navas");
+        hn19004.setCarnet("HN19004");
+        hn19004.setEmail("HN19004");
         
+        model.addAttribute("hn19004", hn19004);
         return "index";
     }
     
